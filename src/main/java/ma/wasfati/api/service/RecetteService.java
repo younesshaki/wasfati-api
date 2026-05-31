@@ -35,10 +35,7 @@ public class RecetteService {
 
     public Page<RecetteResponse> search(String query, int page, int size) {
         Pageable pageable = PageRequest.of(page, size, Sort.by("dateCreation").descending());
-        return recetteRepository
-                .findByTitreContainingIgnoreCaseOrDescriptionContainingIgnoreCaseOrIngredientsNomContainingIgnoreCase(
-                        query, query, query, pageable)
-                .map(this::toResponse);
+        return recetteRepository.search(query, pageable).map(this::toResponse);
     }
 
     @Transactional
