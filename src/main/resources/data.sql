@@ -1,12 +1,12 @@
 INSERT INTO recette (titre, description, img_link, temps_minute) VALUES
-('Tajine de Poulet aux Olives', 'Un tajine savoureux et parfumé aux épices marocaines avec des olives marinées et du citron confit.', 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80', 90),
+('Tajine de Poulet aux Olives', 'Un tajine savoureux et parfumé aux épices marocaines avec des olives marinées et du citron confit.', 'http://localhost:8080/images/tajine-poulet-olives.png', 90),
 ('Couscous Royal', 'Le couscous royal marocain avec sept légumes, viande d''agneau et merguez grillées.', 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=600&q=80', 120),
-('Harira', 'La soupe traditionnelle marocaine à base de tomates, lentilles, pois chiches et coriandre fraîche.', 'https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80', 60),
-('Pastilla au Poulet', 'Feuilletés dorés fourrés de poulet, amandes et épices, saupoudrés de sucre glace et cannelle.', 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80', 150),
-('Briouates aux Crevettes', 'Triangles croustillants de pâte filo fourrés aux crevettes, fromage et persil frais.', 'https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&q=80', 45),
-('Cornes de Gazelle', 'Pâtisseries en forme de croissant fourrées d''amandes parfumées à l''eau de rose et fleur d''oranger.', 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80', 80),
-('Zaalouk d''Aubergines', 'Salade cuite d''aubergines et tomates aux épices, servie tiède avec du pain marocain.', 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80', 40),
-('Méchoui d''Agneau', 'Agneau entier rôti lentement au four avec cumin, coriandre et beurre smen, fondant à souhait.', 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80', 240);
+('Harira', 'La soupe traditionnelle marocaine à base de tomates, lentilles, pois chiches et coriandre fraîche.', 'http://localhost:8080/images/harira.png', 60),
+('Pastilla au Poulet', 'Feuilletés dorés fourrés de poulet, amandes et épices, saupoudrés de sucre glace et cannelle.', 'http://localhost:8080/images/pastilla.png', 150),
+('Briouates aux Crevettes', 'Triangles croustillants de pâte filo fourrés aux crevettes, fromage et persil frais.', 'http://localhost:8080/images/briouates.png', 45),
+('Cornes de Gazelle', 'Pâtisseries en forme de croissant fourrées d''amandes parfumées à l''eau de rose et fleur d''oranger.', 'http://localhost:8080/images/cornes-gazelle.png', 80),
+('Zaalouk d''Aubergines', 'Salade cuite d''aubergines et tomates aux épices, servie tiède avec du pain marocain.', 'http://localhost:8080/images/zaalouk.png', 40),
+('Méchoui d''Agneau', 'Agneau entier rôti lentement au four avec cumin, coriandre et beurre smen, fondant à souhait.', 'http://localhost:8080/images/mechoui.png', 240);
 
 -- Ingredients for each recipe
 INSERT INTO ingredient (nom, quantite, recette_id) VALUES

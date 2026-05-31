@@ -55,7 +55,7 @@ public class SecurityConfig {
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers(HttpMethod.GET, "/api/recettes/**").permitAll()
                 .requestMatchers(HttpMethod.POST, "/api/auth/**").permitAll()
-                .requestMatchers("/swagger-ui/**", "/swagger-ui.html", "/v3/api-docs/**").permitAll()
+                .requestMatchers("/images/**", "/swagger-ui/**", "/swagger-ui.html", "/v3/api-docs/**").permitAll()
                 .requestMatchers("/h2-console/**").permitAll()
                 .requestMatchers(HttpMethod.POST, "/api/recettes/**").authenticated()
                 .requestMatchers(HttpMethod.PUT, "/api/recettes/**").authenticated()
